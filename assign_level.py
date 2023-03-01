@@ -11,6 +11,7 @@ The input is a level passed to a function containing the levels and points conta
 The output is a print to the console with the corresponding points to the level passed in
 """
 
+
 def switch_level(level_to_search):
     """
     This function simulates a switch function by search a dictionary for a key matching the level_to_search
@@ -28,7 +29,8 @@ def switch_level(level_to_search):
         "A": 500
     }
 
-    return(level_dict.get(level_to_search, "No such level!"))
+    return (level_dict.get(level_to_search, "No such level!"))
+
 
 # driver
 if __name__ == "__main__":
