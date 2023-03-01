@@ -82,8 +82,11 @@ def average_scores(scores_dict):
     for key, value in scores_dict.items():
         total_of_scores += value
 
-    # calculate the average of the scores
-    calc_average = (total_of_scores / len(scores_dict))
+    if (len(scores_dict) > 0):
+        # calculate the average of the scores
+        calc_average = (total_of_scores / len(scores_dict))
+    else:
+        raise ValueError
 
     # return the calculated value
     return calc_average
