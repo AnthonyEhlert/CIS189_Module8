@@ -1,7 +1,15 @@
 import unittest
 from dictionary_update import average_scores
 
+"""
+Program: test_average_scores.py
+Author: Tony Ehlert
+Last date modified: 03/01/2023
 
+The purpose of this program is to test the average_scores function of the dictionary_update.py file 
+The input is different unit tests containing different sizes of dictionaries along with the expected results
+The output is the number of tests that passed/failed
+"""
 class MyTestCase(unittest.TestCase):
     def test_average(self):
         # ARRANGE
